@@ -12,7 +12,7 @@ fn main() {
         println!("Please input your guess");
 
         let mut guess = String::new(); 
-        //by default vaiables in rust are immutable 
+        //by default variables in rust are immutable 
         //by adding mut keyword before the variable name we make it mutable
         // = operator will bind the value to the variable name
         //::new() is a associated function which is implemented on a type 
@@ -36,7 +36,18 @@ fn main() {
         //parse returns Result enum which has two variants Ok and Err
         
 
-        println!("You guessed : {guess}");
+        // println!("You guessed : {guess}");
+
+        // if guess < secret_number {
+        //     println!("Too small!!");
+        // }
+        // else if guess > secret_number {
+        //     println!("Too biggg!!");
+        // }
+        // else if guess == secret_number {
+        //     println!("YOU WINNN!!");
+        //     break;
+        // }
 
         match guess.cmp(&secret_number){
             Ordering::Less => println!("Too small!!"),
