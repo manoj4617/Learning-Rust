@@ -1,16 +1,20 @@
 fn main(){
-    // let mut x = 2;
-    // println!("The numbers is {x}"); 
 
-    // x = 10;
-    // println!("The numbers is {x}"); 
+    let s = String::from("Manoj");
 
-    //shadowing
-    let m = 10;
-    let m = 10 * 2;
-    {
-        let m = 10 * 3;
-        println!("Value of m in inner scope is {m}");
-    }
-    println!("Value of m in outer scope is {m}");
+    takes_ownership(s);
+
+    let x = 32;
+
+    println!("number after sending to fn: {x}");
+    println!("string after sending to fn: {s}");
+
+}
+
+fn takes_ownership(str: String){
+    println!("string sent is: {str}");
+}
+
+fn takes_int(num: u32){
+    println!("number is: {num}");
 }
