@@ -15,7 +15,7 @@ fn main() {
         //by default variables in rust are immutable 
         //by adding mut keyword before the variable name we make it mutable
         // = operator will bind the value to the variable name
-        //::new() is a associated function which is implemented on a type 
+        //::new() is a associated function which is implemented on a data type
         //it creates a new instance of the type specified, in this case string
 
         io::stdin()

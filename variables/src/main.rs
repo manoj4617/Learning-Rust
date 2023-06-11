@@ -37,10 +37,13 @@ fn main() {
    
 
         let s = String::from("Manoj");
+        //let str1: String = String::from("Anuj");
     
+        let var: i128 = -23;
+
         takes_ownership(s);
     
-        let x = 32;
+        let x: u32 = 32;
         takes_int(x);
         println!("number after sending to fn: {x}");
         //println!("string after sending to fn: {s}");
